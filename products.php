@@ -30,7 +30,7 @@
             echo "<h3>" . $row['nombre'] . "</h3>";
             echo "<img src='images/" . $row['imagen'] . "' alt='" . $row['nombre'] . "'>";
             echo "<p>" . $row['descripcion'] . "</p>";
-            echo "<p>Precio: $" . $row['precio'] . "</p>";
+            echo "<p class='price'>Precio: $" . $row['precio'] . "</p>";
             echo "</div>";
           }
         } else {
