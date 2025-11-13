@@ -50,13 +50,14 @@ include '../includes/db.php';
         </table>
 
         <h2>Gestionar Productos</h2>
-        <a href="add_product.php">Añadir Nuevo Producto</a>
+        <a href="add_product.php" class="button">Añadir Nuevo Producto</a>
         <table>
             <tr>
                 <th>ID</th>
                 <th>Nombre</th>
                 <th>Precio</th>
                 <th>Imagen</th>
+                <th>Acción</th>
             </tr>
             <?php
             $sql = "SELECT id, nombre, precio, imagen FROM productos";
@@ -68,6 +69,7 @@ include '../includes/db.php';
                     echo "<td>" . $row['nombre'] . "</td>";
                     echo "<td>" . $row['precio'] . "</td>";
                     echo "<td>" . $row['imagen'] . "</td>";
+                     echo "<td><a href='delete_product.php?id=" . $row['id'] . "' onclick=\"return confirm('¿Estás seguro de que quieres eliminar este producto?');\">Eliminar</a></td>";
                     echo "</tr>";
                 }
             } else {
