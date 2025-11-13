@@ -64,10 +64,8 @@ CREATE TABLE `usuarios` (
 --
 -- Dumping data for table `usuarios`
 --
--- IMPORTANTE: Reemplaza la siguiente contraseña con el hash generado por `hasher.php`.
--- La contraseña por defecto es '12345678'.
 INSERT INTO `usuarios` (`id`, `nombre`, `email`, `password`, `is_admin`) VALUES
-(1, 'Admin', 'admin@gmail.com', 'POR_FAVOR_REEMPLAZAR_CON_HASH', 1);
+(1, 'Admin', 'admin@gmail.com', '12345678', 1);
 
 --
 -- Indexes for dumped tables
