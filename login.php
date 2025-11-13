@@ -25,7 +25,10 @@
       <input type="password" id="password" name="password" required>
       <button type="submit">Login</button>
     </form>
-    <p>¿No tienes una cuenta? <a href="register.php">Regístrate aquí</a></p>
+    <div class="form-footer">
+        <p>¿No tienes una cuenta? <a href="register.php">Regístrate aquí</a></p>
+    </div>
   </main>
+  <?php include 'includes/footer.php'; ?>
 </body>
 </html>

@@ -28,5 +28,6 @@ if (!isset($_SESSION['is_admin']) || !$_SESSION['is_admin']) {
             <button type="submit">Añadir Producto</button>
         </form>
     </main>
+    <?php include '../includes/footer.php'; ?>
 </body>
 </html>

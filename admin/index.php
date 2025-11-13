@@ -76,5 +76,6 @@ include '../includes/db.php';
             ?>
         </table>
     </main>
+    <?php include '../includes/footer.php'; ?>
 </body>
 </html>

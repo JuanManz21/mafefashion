@@ -17,8 +17,14 @@
     </nav>
   </header>
   <main>
-    <h2>Bienvenida a Mafe Fashion</h2>
-    <p>La mejor ropa para mujer.</p>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Estilo y Elegancia para la Mujer Moderna</h2>
+            <p>Descubre las últimas tendencias y encuentra tu look perfecto.</p>
+            <a href="products.php" class="cta-button">Ver Colección</a>
+        </div>
+    </section>
   </main>
+  <?php include 'includes/footer.php'; ?>
 </body>
 </html>
